@@ -1,0 +1,10 @@
+resilience4j.ratelimiter:
+  instances:
+    userBackend:
+      limitForPeriod: 10
+      limitRefreshPeriod: 1m
+      timeoutDuration: 0
+    authBackend:
+      limitForPeriod: 10
+      limitRefreshPeriod: 10s
+      timeoutDuration: 0

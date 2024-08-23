@@ -11,7 +11,7 @@ public class UserController {
     // This is a dummy method to demonstrate the use of the RateLimit
 
     @GetMapping("/users")
-    @RateLimiter(name = "users")
+    @RateLimiter(name = "userBackend")
     public String listUser() {
         return "This would list all users";
     }
